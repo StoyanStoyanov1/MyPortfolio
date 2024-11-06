@@ -4,7 +4,7 @@ header {
     position: relative;
 }
 
-nav {
+nav, footer {
     font-family: "Whisper", cursive;
     font-weight: 500;
     top: 0;
