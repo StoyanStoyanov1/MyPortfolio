@@ -1,0 +1,36 @@
+.aboutMe, .aboutMe h1, .aboutMe p {
+    justify-items: center;
+    justify-content: space-around;  
+    margin: 30px auto;
+    text-align: center;
+}
+
+.profilPicture {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px 8px  rgb(24, 102, 141);
+    margin-bottom: 20px;
+}
+
+.profilDetails {
+    max-width: calc(100% - 50px);
+}
+
+.aboutMe p, .aboutMe h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    color: #000;
+    max-width: calc(100% - 100px);
+    text-shadow: 0px 10px 15px  rgba(63, 64, 65, 0.7);
+    text-align: center;
+}
+
+.aboutMe h1 {
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
