@@ -41,4 +41,6 @@ nav a:hover{
 .flags span {
     margin-left: 10px;
     cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
 }
