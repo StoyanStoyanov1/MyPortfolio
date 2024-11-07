@@ -2,7 +2,7 @@
 import { LanguageProvider } from "./context/LanguageContext";
 
 //Components
-import Navigation from "./components/Navigation/Navigation";
+import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 
 function App() {
