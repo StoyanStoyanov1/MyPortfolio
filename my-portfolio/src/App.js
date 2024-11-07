@@ -11,9 +11,7 @@ function App() {
     <LanguageProvider>
       <div id='box'>
           <Navigation />
-          <div className="container">
             <AboutMe/>
-          </div>
           <Footer />
       </div>
     </LanguageProvider>

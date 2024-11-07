@@ -50,10 +50,18 @@ img, video {
     transform: translate(-50%, -50%);
     width: calc(100% - 200px);
     max-width: 800px;
-    min-height: calc(100% - 200px);
+    min-height: 200px;
     border: 1px solid #000;
     box-shadow: 0 4px 10px 4px rgba(35, 107, 144, 0.6);
     background-color: #ddd9d9;
     border-radius: 10px;
-    min-width: 500px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        overflow: auto;
+        width: 500px;
+        height: 500px;
+    }
+    
 }
