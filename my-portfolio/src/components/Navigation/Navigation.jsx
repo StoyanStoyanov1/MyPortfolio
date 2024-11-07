@@ -15,9 +15,9 @@ export default function Navigation() {
             <nav>
                
                 <div className='flags'>
-                    <span class="fi fi-de" onClick={() => setLanguage('de')} > </span>
-                    <span class="fi fi-gb" onClick={() => setLanguage('en')}> </span>
-                    <span class="fi fi-bg" onClick={() => setLanguage('bg')}> </span>  
+                    <span className="fi fi-de" onClick={() => setLanguage('de')} > </span>
+                    <span className="fi fi-gb" onClick={() => setLanguage('en')}> </span>
+                    <span className="fi fi-bg" onClick={() => setLanguage('bg')}> </span>  
                 </div>
                 <div className='nav-buttons'>
                     <Link to='/'>{translateButtons.aboutMe[language]}</Link>
