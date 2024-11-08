@@ -21,30 +21,42 @@
 }   
 
 .certificateInfo {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #439e9e;
-    max-height: 0; 
     overflow: hidden; 
     transition: max-height 0.5s ease-in-out; 
     position: absolute; 
     top: 100%; 
     left: 0;
     right: 0;
+    border-radius: 16px;
+    max-height: 0;
 }
 
 .showInfo {
-    max-height: 200px; 
-    padding: 10px;
     border-radius: 18px;
+    max-height: 1000px;
+    padding: 10px;
 }
 
-.showInfo{
-    max-height: 200px; 
-    padding: 10px;
-}
 
 
 .certificateTitle {
     cursor: pointer;
     padding: 16px;
     border-radius: 18px;
+}
+
+.certificateFoto {
+    width: 300px;
+    height: 450px;
+    background-color: azure;
+    border: 1px solid #09096b;
+    box-shadow: 4px 2px 3px 4px rgba(35, 107, 144, 0.6);
+    border-radius: 10px;
+    background-color: azure;
+    background-image: url('./../images/Python-Basic.jfif'); 
+    background-size: cover; 
+    background-position: center; 
 }

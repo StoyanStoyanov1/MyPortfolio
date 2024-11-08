@@ -11,8 +11,12 @@ export default function CertificateDetails ({data}){
 
             
             <div className={`certificateInfo ${showInfo ? 'showInfo': ''}`} > 
-                <p>Това е информацията, която се показва при натискане на бутона!</p>
+               <div className='certificateFoto'>
+
+               </div>
+               <p>Info</p>
             </div>
+            
            
         </div>
     )
