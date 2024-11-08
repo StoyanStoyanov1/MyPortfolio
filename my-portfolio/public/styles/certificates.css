@@ -1,0 +1,38 @@
+.certificatesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin: 0;
+    position: relative; 
+    flex-direction: column;
+}
+
+.certificateDetails {
+    text-align: center;
+    margin-top: 20px;
+    width: calc(100% - 20em);
+    background-color: aliceblue;
+    max-width: 1200px;
+    padding: 16px;
+    border: 1px solid #FFF;
+    border-radius: 18px;
+    position: relative; 
+}
+
+.certificateInfo {
+    background-color: rgb(255, 255, 255);
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-out; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+}
+
+.showInfo {
+    max-height: 200px; 
+    padding: 10px;
+    border-radius: 18px;
+}

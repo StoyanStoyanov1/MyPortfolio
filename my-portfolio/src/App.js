@@ -8,6 +8,7 @@ import paths from './utils/translator/paths';
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import AboutMe from "./components/aboutMe/AboutMe";
+import Certificates from './components/certificates/Certificates';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Navigation />
           <Routes>
             <Route path={paths.aboutMe} element={<AboutMe />}/>
+            <Route path={paths.certificates} element={<Certificates />}/>
           </Routes>
-            <AboutMe/>
           <Footer />
       </div>
     </LanguageProvider>
