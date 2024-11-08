@@ -16,13 +16,15 @@
     max-width: 1200px;
     border-radius: 16px;
     position: relative; 
-}
-    
+    border: 1px solid #09096b;
+    box-shadow: 0 4px 10px 4px rgba(35, 107, 144, 0.6);
+}   
+
 .certificateInfo {
     background-color: #439e9e;
     max-height: 0; 
     overflow: hidden; 
-    transition: max-height 0.5s ease-out; 
+    transition: max-height 0.5s ease-in-out; 
     position: absolute; 
     top: 100%; 
     left: 0;
@@ -34,6 +36,12 @@
     padding: 10px;
     border-radius: 18px;
 }
+
+.showInfo{
+    max-height: 200px; 
+    padding: 10px;
+}
+
 
 .certificateTitle {
     cursor: pointer;

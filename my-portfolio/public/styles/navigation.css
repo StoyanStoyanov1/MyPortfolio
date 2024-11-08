@@ -17,6 +17,7 @@ nav, footer {
     color: #fff;
     z-index: 1000;
     background: linear-gradient(to right, #7aeadf, #296b6b, #09096b);
+    box-shadow: 0 4px 10px 4px rgba(35, 107, 144, 0.8);
 }
 
 .nav-buttons a {
