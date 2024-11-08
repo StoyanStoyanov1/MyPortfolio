@@ -16,6 +16,7 @@ nav, footer {
     padding: 10px 20px;
     color: #fff;
     z-index: 1000;
+    background: linear-gradient(to right, #7aeadf, #296b6b, #09096b);
 }
 
 .nav-buttons a {
