@@ -2,6 +2,8 @@ import 'flag-icons/css/flag-icons.min.css';
 import { useLanguage } from '../../context/LanguageContext';
 import { Link } from 'react-router-dom'
 
+//context and utils
+import paths from '../../utils/translator/paths';
 import translateButtons from '../../utils/translator/translateButtons';
 
 export default function Navigation() {
@@ -20,7 +22,7 @@ export default function Navigation() {
                     <span className="fi fi-bg" onClick={() => setLanguage('bg')}> </span>  
                 </div>
                 <div className='nav-buttons'>
-                    <Link to='/'>{translateButtons.aboutMe[language]}</Link>
+                    <Link to={paths.aboutMe}>{translateButtons.aboutMe[language]}</Link>
                     <Link to='/'>{translateButtons.certificates[language]}</Link>
                     <Link to='/'>{translateButtons.projects[language]}</Link>
                 </div>
