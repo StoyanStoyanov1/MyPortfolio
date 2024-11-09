@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function CertificateDetails ({info}){
-    const [showInfo, setShowInfo] = useState(true);
+    const [showInfo, setShowInfo] = useState(false);
     const [isZoomed, setIsZoomed] = useState(false);
     const [ language ] = useLanguage();
 
