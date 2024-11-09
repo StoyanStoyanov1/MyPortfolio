@@ -3,7 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { Link } from 'react-router-dom'
 
 //context and utils
-import paths from '../../utils/translator/paths';
+import paths from '../../utils/paths';
 import translateButtons from '../../utils/translator/translateButtons';
 
 export default function Navigation() {

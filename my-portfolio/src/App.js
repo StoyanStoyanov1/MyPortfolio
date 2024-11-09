@@ -2,7 +2,7 @@ import {Routes, Route} from 'react-router-dom'
 
 //Context and utils
 import { LanguageProvider } from "./context/LanguageContext";
-import paths from './utils/translator/paths';
+import paths from './utils/paths';
 
 //Components
 import Navigation from "./components/navigation/Navigation";
