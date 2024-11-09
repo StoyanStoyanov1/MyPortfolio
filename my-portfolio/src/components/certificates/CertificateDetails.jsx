@@ -25,7 +25,11 @@ export default function CertificateDetails ({info}){
             <div className='certificateTitle' 
             onClick={() => setShowInfo(!showInfo)}
             > 
-                <h1>Python Basic</h1>
+            <div className='titleCertificate'>
+                <h1>{info.title} </h1>
+                <p>{showInfo ? '➖' : '➕'}</p>
+            </div>
+                
             </div>
 
             
