@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function CertificateDetails ({info}){
-    const [showInfo, setShowInfo] = useState(false);
+    const [showInfo, setShowInfo] = useState(true);
     const [isZoomed, setIsZoomed] = useState(false);
+    const [ language ] = useLanguage();
 
     const backgroundStyle = {
         backgroundImage: `url('/images/${info.certificateImage}')`, 
@@ -41,7 +43,12 @@ export default function CertificateDetails ({info}){
                >
 
                </div>
-               <p>Info</p>
+               <div className='info'>
+                <h2>{info.kurs(language)}</h2>
+                <p>{info.date}</p>
+                <p>{info.info(language)}</p>
+                {info.grade && <p>{info.grade(language)}</p>}
+               </div>
             </div>
             {isZoomed && <div className='overlay' onClick={handleZoomClick} />}
            
