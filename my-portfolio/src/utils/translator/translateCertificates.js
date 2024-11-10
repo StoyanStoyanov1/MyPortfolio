@@ -14,6 +14,11 @@ const translateCertifictes = {
         de: 'Ausgezeichnet',
         bg: 'Отличен',
     },
+    exercises: {
+        en: 'Exercises',
+        de: 'Übungen',
+        bg: 'Упражнения',  
+    },
     pythonBasicInfo: {
         en: 'In this course, I am gaining fundamental programming knowledge and skills. I am learning how to use functions, and how to work with for and while loops to effectively manage program logic.',
         de: 'In diesem Kurs erwerbe ich grundlegende Programmierkenntnisse und -fähigkeiten. Ich lerne, wie man Funktionen verwendet und mit for- und while-Schleifen arbeitet, um die Logik in Programmen effektiv zu steuern.',

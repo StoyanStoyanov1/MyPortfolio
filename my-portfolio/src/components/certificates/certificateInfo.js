@@ -7,7 +7,8 @@ const certificateInfo = [
         kurs: (language) => `Soft Uni - ${translateCertifictes.country[language]}`,
         date: '03.2023 - 06.2023',
         info: (language) => translateCertifictes.pythonFundamentalsInfo[language],
-        grade: (language) => `${translateCertifictes.grade[language]}: ${translateCertifictes.excelent[language]}`
+        grade: (language) => `${translateCertifictes.grade[language]}: ${translateCertifictes.excelent[language]}`,
+        gitHub: 'https://github.com/StoyanStoyanov1/SoftUni-Fundamental-Exercises'
        },   
     {title: 'Python Basic',
      certificateImage: 'Python-Basic.jfif',
@@ -15,7 +16,8 @@ const certificateInfo = [
      kurs: (language) => `Soft Uni - ${translateCertifictes.country[language]}`,
      date: '01.2023 - 03.2023',
      info: (language) => translateCertifictes.pythonBasicInfo[language],
-     grade: (language) => `${translateCertifictes.grade[language]}: ${translateCertifictes.excelent[language]}`
+     grade: (language) => `${translateCertifictes.grade[language]}: ${translateCertifictes.excelent[language]}`,
+     gitHub: 'https://github.com/StoyanStoyanov1/SoftUni-Fundamental-Exercises'
     },   
 ]
 
