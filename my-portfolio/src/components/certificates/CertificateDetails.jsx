@@ -7,16 +7,15 @@ export default function CertificateDetails ({info}){
     const [ language ] = useLanguage();
 
     const backgroundStyle = {
-        backgroundImage: `url('/images/${info.certificateImage}')`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
+        backgroundImage: `url('/images/${info.certificateImage}')`,
+        backgroundSize: isZoomed ? 'auto' : 'cover',
+        backgroundPosition: 'center',
     };
 
     const backgroundZoomStyle = {
         backgroundImage: `url('/images/${info.zoomImage}')`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-    }
+        
+        }
 
     const handleZoomClick = () => {
         setIsZoomed(!isZoomed);
@@ -36,13 +35,19 @@ export default function CertificateDetails ({info}){
 
             
             <div className={`certificateInfo ${showInfo ? 'showInfo': ''}`} > 
-               <div 
-               className={`certificateFoto ${isZoomed ? 'zoomed' : ''}`}
-               style={isZoomed ? backgroundZoomStyle : backgroundStyle} 
-               onClick={handleZoomClick}
-               >
-
-               </div>
+            <div className={`certificateFoto ${isZoomed ? 'zoomed' : ''}`} onClick={handleZoomClick}>
+    {isZoomed ? (
+        <img
+            src={`/images/${info.zoomImage}`}
+            alt="Zoomed certificate"
+        />
+    ) : (
+        <img
+            src={`/images/${info.certificateImage}`}
+            alt="Certificate"
+        />
+    )}
+</div>
                <div className='info'>
                 <h2>{info.kurs(language)}</h2>
                 <p>{info.date}</p>
