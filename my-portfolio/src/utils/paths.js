@@ -1,6 +1,7 @@
 const paths = {
     aboutMe: '/',
-    certificates: '/certificates'
+    certificates: '/certificates',
+    projects: '/projects',
 };
 
 export default paths;

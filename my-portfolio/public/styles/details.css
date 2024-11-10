@@ -42,14 +42,15 @@
 
 .detailsFoto {
     width: 350px;
-    height: 500px;
-    background-color: azure;
-    border: 1px solid #09096b;
-    box-shadow: 4px 2px 3px 4px rgba(35, 107, 144, 0.6);
     border-radius: 10px;
-    background-size: cover;
-    background-position: center;
     cursor: zoom-in;
+    object-fit: cover;
+}
+
+.detailsFoto img{
+    box-shadow: 4px 2px 3px 4px rgba(35, 107, 144, 0.6);
+    border: 1px solid #09096b;
+    border-radius: 15px;
 }
 
 .detailsFoto:hover {
@@ -133,14 +134,23 @@
 
 }
 
-.info p:first-of-type {
+.detailsDate {
     color: #fff;
     font-style: italic;
     text-decoration: underline;
 }
 
-.info p:last-of-type {
-    font-size: 24px;
+.detailsView {
+    font-size: 28px;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.technologies span {
+    color: #09096b;
+    font-weight: bold;
+}
+
+.technologies p {
+    color: #09096b;
 }

@@ -20,7 +20,7 @@ export default function Navigation() {
                 <div className='nav-buttons'>
                     <Link to={paths.aboutMe}>{translateButtons.aboutMe[language]}</Link>
                     <Link to={paths.certificates}>{translateButtons.certificates[language]}</Link>
-                    <Link to='/'>{translateButtons.projects[language]}</Link>
+                    <Link to={paths.projects}>{translateButtons.projects[language]}</Link>
                 </div>
             
             </nav>

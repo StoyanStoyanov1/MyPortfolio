@@ -26,24 +26,33 @@ export default function Details ({info}){
             
             <div className={`detailsInfo ${showInfo ? 'showInfo': ''}`} > 
             <div className={`detailsFoto ${isZoomed ? 'zoomed' : ''}`} onClick={handleZoomClick}>
-    {isZoomed ? (
+            {isZoomed ? (
         <img
             src={`/images/${info.zoomImage}`}
             alt="Zoomed details"
         />
     ) : (
         <img
-            src={`/images/${info.certificateImage}`}
+            src={`/images/${info.image}`}
             alt="Details"
         />
     )}
-</div>
+            </div>
                <div className='info'>
-                <h2>{info.kurs(language)}</h2>
-                <p>{info.date}</p>
+                {info.kurs && 
+                <h2>{info.kurs(language)}</h2>}
+                {info.date && <p className='detailsDate'>{info.date}</p>}
                 <p>{info.info(language)}</p>
-                <p>{translateDetails.exercises[language]}: <a href={info.gitHub}>GitHub</a></p>
-                {info.grade && <p>{info.grade(language)}</p>}
+                {info.technologies && (
+                    <div className='technologies'>
+                        {info.technologies.map((technologie, index) => (
+                            <p key={index}><span>{technologie.type} -</span> {technologie.content}</p>
+                        ))}
+                    </div>
+                )}
+                <p className='detailsView'>{translateDetails.more[language]} {'->'} <a href={info.gitHub}>GitHub</a></p>
+                {info.grade && <p className='detailsView'>{info.grade(language)}</p>}
+                <a href={info.deploy} style={{fontSize: '18px'}} >{info.deploy}</a>
                </div>
             </div>
             {isZoomed && <div className='overlay' onClick={handleZoomClick} />}

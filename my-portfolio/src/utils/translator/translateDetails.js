@@ -14,10 +14,10 @@ const translateDetails = {
         de: 'Ausgezeichnet',
         bg: 'Отличен',
     },
-    exercises: {
-        en: 'Exercises',
-        de: 'Übungen',
-        bg: 'Упражнения',  
+    more: {
+        en: 'More',
+        de: 'Mehr',
+        bg: 'Повече',  
     },
 }
 
