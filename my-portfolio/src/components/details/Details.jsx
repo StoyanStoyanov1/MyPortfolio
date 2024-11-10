@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import translateCertifictes from '../../utils/translator/translateCertificates';
+import translateDetails from '../../utils/translator/translateDetails';
 
-export default function CertificateDetails ({info}){
+export default function Details ({info}){
     const [showInfo, setShowInfo] = useState(false);
     const [isZoomed, setIsZoomed] = useState(false);
     const [ language ] = useLanguage();
@@ -12,11 +12,11 @@ export default function CertificateDetails ({info}){
     }
 
     return (
-        <div className='certificateDetails' >
-            <div className='certificateTitle' 
+        <div className='details' >
+            <div className='detailsTitle' 
             onClick={() => setShowInfo(!showInfo)}
             > 
-            <div className='titleCertificate'>
+            <div className='titleDetails'>
                 <h1>{info.title} </h1>
                 <p>{showInfo ? '➖' : '➕'}</p>
             </div>
@@ -24,17 +24,17 @@ export default function CertificateDetails ({info}){
             </div>
 
             
-            <div className={`certificateInfo ${showInfo ? 'showInfo': ''}`} > 
-            <div className={`certificateFoto ${isZoomed ? 'zoomed' : ''}`} onClick={handleZoomClick}>
+            <div className={`detailsInfo ${showInfo ? 'showInfo': ''}`} > 
+            <div className={`detailsFoto ${isZoomed ? 'zoomed' : ''}`} onClick={handleZoomClick}>
     {isZoomed ? (
         <img
             src={`/images/${info.zoomImage}`}
-            alt="Zoomed certificate"
+            alt="Zoomed details"
         />
     ) : (
         <img
             src={`/images/${info.certificateImage}`}
-            alt="Certificate"
+            alt="Details"
         />
     )}
 </div>
@@ -42,7 +42,7 @@ export default function CertificateDetails ({info}){
                 <h2>{info.kurs(language)}</h2>
                 <p>{info.date}</p>
                 <p>{info.info(language)}</p>
-                <p>{translateCertifictes.exercises[language]}: <a href={info.gitHub}>GitHub</a></p>
+                <p>{translateDetails.exercises[language]}: <a href={info.gitHub}>GitHub</a></p>
                 {info.grade && <p>{info.grade(language)}</p>}
                </div>
             </div>

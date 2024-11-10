@@ -1,13 +1,11 @@
-import CertificateDetails from "./CertificateDetails"
-import certificateInfo from "./certificateInfo"
+import Details from "../details/Details";
+import certificateInfo from "./certificateInfo";
 
 export default function Certificates () {
-    
-
     return (
-        <div className="certificatesContainer" >
+        <div className="detailsContainer" >
             {certificateInfo.map((certificate, index) => (
-                <CertificateDetails key={index} info={certificate} />
+                <Details key={index} info={certificate} />
             ))
             
             }
