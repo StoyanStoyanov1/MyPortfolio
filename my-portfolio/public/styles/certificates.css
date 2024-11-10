@@ -31,7 +31,7 @@
 
 .showInfo {
     padding: 20px;
-    height: 400px; 
+    height: 550px;
 }
 
 .certificateTitle {
@@ -41,8 +41,8 @@
 }
 
 .certificateFoto {
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 500px;
     background-color: azure;
     border: 1px solid #09096b;
     box-shadow: 4px 2px 3px 4px rgba(35, 107, 144, 0.6);
