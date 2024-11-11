@@ -3,6 +3,16 @@ import translateDetails from "../../utils/translator/translateDetails";
 
 const certificateInfo = [
     {
+        title: 'JS Front End',
+        image: 'JS-Front-End.jfif',
+        zoomImage: 'JS-Front-End-More.jpeg',
+        kurs: (language) => `Soft Uni - ${translateDetails.country[language]}`,
+        date: '01.2024 - 03.2024',
+        info: (language) => translateCertifictes.JSFrontEndInfo[language],
+        grade: (language) => `${translateDetails.grade[language]}: ${translateDetails.excelent[language]}`,
+        gitHub: 'https://github.com/StoyanStoyanov1/JS-Front-End'
+       }, 
+    {
         title: 'HTML-CSS',
         image: 'HTML-CSS.jfif',
         zoomImage: 'HTML-CSS-More.jpeg',
