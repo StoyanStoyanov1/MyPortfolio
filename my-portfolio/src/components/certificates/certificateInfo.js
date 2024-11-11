@@ -2,6 +2,15 @@ import translateCertifictes from "../../utils/translator/translateCertificates";
 import translateDetails from "../../utils/translator/translateDetails";
 
 const certificateInfo = [
+    {title: 'PostgreSQL',
+        image: 'PostgreSQL.jfif',
+        zoomImage: 'PostgreSQL-More.jpeg',
+        kurs: (language) => `Soft Uni - ${translateDetails.country[language]}`,
+        date: '10.2023 - 12.2023',
+        info: (language) => translateCertifictes.postgreSQLInfo[language],
+        grade: (language) => `${translateDetails.grade[language]}: ${translateDetails.excelent[language]}`,
+        gitHub: 'https://github.com/StoyanStoyanov1/PostgreSQL'
+       }, 
     {title: 'Python ORM',
         image: 'Python-ORM.jfif',
         zoomImage: 'Python-ORM-More.jpeg',
