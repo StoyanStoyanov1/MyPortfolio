@@ -2,6 +2,15 @@ import translateCertifictes from "../../utils/translator/translateCertificates";
 import translateDetails from "../../utils/translator/translateDetails";
 
 const certificateInfo = [
+    {title: 'Python OOP',
+        image: 'Python-OOP.jfif',
+        zoomImage: 'Python-OOP-More.jpeg',
+        kurs: (language) => `Soft Uni - ${translateDetails.country[language]}`,
+        date: '09.2023 - 12.2023',
+        info: (language) => translateCertifictes.pythonOOPInfo[language],
+        grade: (language) => `${translateDetails.grade[language]}: ${translateDetails.excelent[language]}`,
+        gitHub: 'https://github.com/StoyanStoyanov1/OOP-with-Python'
+       }, 
     {title: 'Python Advanced',
         image: 'Python-Advanced.jfif',
         zoomImage: 'Python-Advanced-More.jpeg',

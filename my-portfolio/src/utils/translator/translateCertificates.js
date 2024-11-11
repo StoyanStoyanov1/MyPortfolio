@@ -1,4 +1,9 @@
 const translateCertifictes = {
+    pythonOOPInfo:{
+        bg: "В курса по Python OOP изучих основните принципи: инкапсулация, наследяване, полиморфизъм и абстракция. Създавах класове и обекти, изграждах йерархии от класове и прилагах наследяване. Разгледах и функционално програмиране чрез ламбда функции, итератори, генератори и декоратори, за да разширя функционалността на кода.",
+        de: "Im Python OOP-Kurs habe ich die grundlegenden Prinzipien gelernt: Kapselung, Vererbung, Polymorphie und Abstraktion. Ich habe Klassen und Objekte erstellt, Klassenhierarchien aufgebaut und Vererbung angewendet. Außerdem habe ich funktionale Programmierung mit Lambda-Funktionen, Iteratoren, Generatoren und Decorators verwendet, um die Funktionalität des Codes zu erweitern.",
+        en: "In the Python OOP course, I learned the core principles: encapsulation, inheritance, polymorphism, and abstraction. I created classes and objects, built class hierarchies, and applied inheritance. I also explored functional programming with lambda functions, iterators, generators, and decorators to enhance the functionality of the code."
+      },
     pythonBasicInfo: {
         en: 'In this course, I am gaining fundamental programming knowledge and skills. I am learning how to use functions, and how to work with for and while loops to effectively manage program logic.',
         de: 'In diesem Kurs erwerbe ich grundlegende Programmierkenntnisse und -fähigkeiten. Ich lerne, wie man Funktionen verwendet und mit for- und while-Schleifen arbeitet, um die Logik in Programmen effektiv zu steuern.',
