@@ -3,6 +3,16 @@ import translateDetails from "../../utils/translator/translateDetails";
 
 const certificateInfo = [
     {
+        title: 'ReactJS',
+        image: 'React.jfif',
+        zoomImage: 'React-More.jpeg',
+        kurs: (language) => `Soft Uni - ${translateDetails.country[language]}`,
+        date: '04.2024 - 07.2024',
+        info: (language) => translateCertifictes.reactInfo[language],
+        grade: (language) => `${translateDetails.grade[language]}: ${translateDetails.excelent[language]}`,
+        gitHub: 'https://github.com/StoyanStoyanov1/React-Exercises'
+       }, 
+    {
         title: 'JS Front End',
         image: 'JS-Front-End.jfif',
         zoomImage: 'JS-Front-End-More.jpeg',
